@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         // add a divider after each item for more clarity
         groceryRecyclerView.addItemDecoration(new DividerItemDecoration(MainActivity.this, LinearLayoutManager.HORIZONTAL));
         groceryAdapter = new RecyclerViewHorizontalListAdapter(groceryList, getApplicationContext());
-        LinearLayoutManager verticalLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
-        groceryRecyclerView.setLayoutManager(verticalLayoutManager);
+        LinearLayoutManager horizontalLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        groceryRecyclerView.setLayoutManager(horizontalLayoutManager);
         groceryRecyclerView.setAdapter(groceryAdapter);
         populategroceryList();
     }
